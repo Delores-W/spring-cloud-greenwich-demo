@@ -1,6 +1,6 @@
 server:
-#  port: 8002
-  port: 8003
+#  port: 8201
+  port: 8202
 
 # 最佳实践：spring cloud应用都要指定application.name
 spring:
@@ -16,4 +16,4 @@ eureka:
     lease-expiration-duration-in-seconds: 10 # 告诉服务端，如果我2s之内没有给你发心跳，就代表我“死”了，将我踢出掉
   client:
     service-url:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://localhost:8100/eureka/

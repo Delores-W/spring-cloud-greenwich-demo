@@ -1,0 +1,29 @@
+server:
+  port: 8403
+#  port: 8404
+
+# 服务与服务之间相互调用一般都是根据这个name 。
+spring:
+  application:
+    name: config-client
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+
+# 配置actuator
+
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: bus-refresh,health,info # 2.X 版本的配置方式。默认只有health,info，这里需要将refresh添加上【手动刷新使用的是refresh，使用消息总线则是bus-refresh】
+  endpoint:
+    health:
+      show-details: always

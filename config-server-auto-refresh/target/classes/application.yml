@@ -1,5 +1,6 @@
 server:
-  port: 8009
+  port: 8401
+#  port: 8402
 
 spring:
   application:
@@ -18,7 +19,7 @@ eureka:
   client:
     service-url:
       # 指定服务注册中心的地址
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://localhost:8100/eureka/
 
   # 心跳检测检测与续约时间
   # 【测试】时将值设置设置小些，保证服务关闭后注册中心能及时踢出服务

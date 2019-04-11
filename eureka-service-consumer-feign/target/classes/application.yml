@@ -1,5 +1,5 @@
 server:
-  port: 8006
+  port: 8302
 
 # 最佳实践：spring cloud应用都要指定application.name
 spring:
@@ -10,7 +10,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://localhost:8100/eureka/
 
 # 启用hystrix
 feign:

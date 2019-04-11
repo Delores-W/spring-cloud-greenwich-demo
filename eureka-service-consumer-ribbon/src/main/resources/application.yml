@@ -1,5 +1,5 @@
 server:
-  port: 8005
+  port: 8301
 
 # 最佳实践：spring cloud应用都要指定application.name
 spring:
@@ -10,4 +10,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://localhost:8100/eureka/
