@@ -1,0 +1,15 @@
+server:
+  port: 8007
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # git仓库的地址
+          uri: https://github.com/heylee-Y/spring-cloud-greenwich-demo.git
+          # 配置仓库路径，这里是文件夹搜索路径
+          search-paths: spring-cloud-config
+          default-label: master

@@ -1,6 +1,6 @@
 server:
-  port: 8002
-#  port: 8003
+#  port: 8002
+  port: 8003
 
 # 最佳实践：spring cloud应用都要指定application.name
 spring:

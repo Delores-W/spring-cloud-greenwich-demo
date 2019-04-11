@@ -11,10 +11,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableHystrix
 @EnableEurekaClient
 @SpringBootApplication
-public class Application {
+public class EurekaServiceConsumerRibbonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(EurekaServiceConsumerRibbonApplication.class, args);
     }
 
     /**

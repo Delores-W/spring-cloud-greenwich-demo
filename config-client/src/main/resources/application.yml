@@ -1,0 +1,7 @@
+server:
+  port: 8008
+
+# 服务与服务之间相互调用一般都是根据这个name 。
+spring:
+  application:
+    name: config-client
